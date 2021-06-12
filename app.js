@@ -31,7 +31,8 @@ const lstTestes = [{ name: 'teste1', data: new Date()}]
 
 app.get('/',(req,res)=> {
 //   res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
-  app.get('/start', (req, res) => res.json(allEvents));
+ (req, res) => res.json(allEvents);
+  console.table(allEvents);
 });
 
 app.listen(process.env.PORT || 8080, () => {
