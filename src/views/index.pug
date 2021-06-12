@@ -1,0 +1,11 @@
+html
+  head
+    title Render HTML using PUG
+  body
+    h1 Welcome #{teste2}
+
+
+  #{new Date().getFullYear()}
+  each teste in lstTestes
+    <p>#{teste.name} </p>
+    <p>#{teste.data} </p>
