@@ -3,20 +3,16 @@
   "version": "1.0.0",
   "description": "estudando api com nodejs ",
   "main": "app.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "author": "lzcdoss",
   "license": "ISC",
-   "dependencies": {
+  "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
     "mssql": "^7.1.0",
     "npm": "^7.16.0",
-    "oracledb": "^5.2.0",
-    "pg": "^8.6.0",
-    "promise-redis": "0.0.5",
+    "package.json": "^2.0.1",
     "pug": "^3.0.2"
   },
   "engines": {
