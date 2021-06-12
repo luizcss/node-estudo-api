@@ -29,9 +29,9 @@ app.post('/post-test', (req, res) => {
 
 const lstTestes = [{ name: 'teste1', data: new Date()}]
 
-app.get('/pug',(req,res)=> {
+app.get('/index',(req,res)=> {
   res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
-  console.table('pug');
+  console.table('index');
 });
 
 app.listen(process.env.PORT || 8080, () => {
