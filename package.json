@@ -1,0 +1,19 @@
+{
+  "name": "estudo-api",
+  "version": "1.0.0",
+  "description": "estudo api com nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizcss/node-estudo-api.git"
+  },
+  "author": "lzcdoss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizcss/node-estudo-api/issues"
+  },
+  "homepage": "https://github.com/luizcss/node-estudo-api#readme"
+}
