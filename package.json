@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "estudando api com nodejs ",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+   "build": "ng build --prod --output-hashing=none",
+    "heroku-postbuild": "ng build --prod"
+  },
   "author": "lzcdoss",
   "license": "ISC",
   "dependencies": {
