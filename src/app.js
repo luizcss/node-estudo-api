@@ -8,6 +8,13 @@ app.use(express.urlencoded({ extended: true }))
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
+const lstTestes = [
+  {
+    name: 'teste1',
+    data: new Date()
+  }
+]
+
 app.get('/',function(req,res) {
   res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
 });
