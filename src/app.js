@@ -7,3 +7,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
+
+app.get('/',function(req,res) {
+  res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
+});
+
+
+app.listen(process.env.PORT || 4100);
