@@ -4,7 +4,7 @@
   "description": "estudando api com nodejs ",
   "main": "app.js",
   "scripts": {
-   "build": "ng build --prod --output-hashing=none",
+   "build": "build --prod --output-hashing=none",
     "heroku-postbuild": "ng build --prod"
   },
   "author": "lzcdoss",
