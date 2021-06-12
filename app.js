@@ -1,5 +1,4 @@
 const express = require('express')
-const Cliente = require("./Model/Cliente");
 const path = require("path");
 
 const app = express()
@@ -19,19 +18,20 @@ const allEvents = [
   }
 ]
 
-app.get('/start', (req, res) => res.json(allEvents))
+app.get('/start', (req, res) => res.json(allEvents));
 
 app.post('/post-test', (req, res) => {
   console.log('body:', req.body);
-  let cliente1 = new Cliente(req.body.nome, req.body.idade, req.body.email);
-  res.sendStatus(200).json(cliente1);
-  console.table(cliente1);
+//   let cliente1 = new Cliente(req.body.nome, req.body.idade, req.body.email);
+//   res.sendStatus(200).json(cliente1);
+//   console.table(cliente1);
 });
 
 const lstTestes = [{ name: 'teste1', data: new Date()}]
 
-app.get('/',function(req,res) {
-  res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
+app.get('/',(req,res)=> {
+//   res.render('index', {lstTestes: lstTestes, teste2:'Luiz'});
+  app.get('/start', (req, res) => res.json(allEvents));
 });
 
 app.listen(process.env.PORT || 8080, () => {
