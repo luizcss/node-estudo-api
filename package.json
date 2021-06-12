@@ -4,8 +4,8 @@
   "description": "estudando api com nodejs ",
   "main": "app.js",
   "scripts": {
-   "build": "build --prod --output-hashing=none",
-    "heroku-postbuild": "build --prod"
+  "start": "node index.js",
+   "heroku-postbuild": "build --prod"
   },
   "author": "lzcdoss",
   "license": "ISC",
